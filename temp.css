@@ -1,0 +1,389 @@
+body{
+  background: black;
+  margin: 0;
+  font-family: Calibri;
+  user-select: none;
+}
+#trigger{
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  top: 10px;
+  left: 10px;
+  width:60px;
+  height:60px;
+  z-index:11;
+  cursor: pointer;
+}
+#Calcapp{
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline-block;
+  top: 10px;
+  left: 20px;
+  width:60px;
+  height:60px;
+  z-index:11;
+  cursor: pointer;
+}
+#triggerday{
+  position: absolute;
+  text-transform: capitalize;
+  font-size: 15px;
+  color: red;
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#triggerdate{
+  position: absolute;
+  font-size: 40px;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#calsq1{
+  position: relative;
+  display:inline-block;
+  float:left;
+  background-color: #fa980b;
+  width:30px;
+  height:30px;
+}
+#calsqtext1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  font-family: Calibri;
+}
+#calsq2{
+  position: relative;
+  display:inline-block;
+  float:left;
+  background-color: #e2e2e2;
+  width:30px;
+  height:30px;
+}
+#calsqtext2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: bold;
+  color: #787878;
+  font-size: 20px;
+  font-family: Calibri;
+}
+#Apps{
+  position: absolute;
+}
+#myVideo{
+  position:absolute;
+  height:100%;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#outer{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 7px solid white;
+  position: absolute;
+  margin: 5px;
+  height: 630px;
+  width: 300px;
+  background-color: #C0C0C0;
+  border-radius: 50px;
+}
+#speaker{
+  position: relative;
+  top :30px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 7px;
+  width: 70px;
+  background-color: #a1a5b3;
+  border-radius: 50px;
+}
+#screen{
+  position: relative;
+  overflow:hidden;
+  margin-top :50px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 480px;
+  width: 280px;
+  background-color: white;
+}
+#homebutton{
+  position: absolute;
+  margin-top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid black;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-image: url("download.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#screenhead1{
+  position: relative;
+  height: 40px;
+  width: 280px;
+  background-color: #58b2a4;
+}
+#screenhead2{
+  position: relative;
+  height: 40px;
+  width: 280px;
+  background-color: #58b2a4;
+}
+#calendar{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+
+}
+#leftarr{
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+}
+#rightarr{
+  position: relative;
+  float: right;
+  margin-right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+}
+#month{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  transform: translate(-50%,-50%);
+  color: white;
+
+}
+#days{
+  position: relative;
+  height: 40px;
+  width: 280px;
+}
+#day{
+  position: relative;
+  float: left;
+  margin: 0;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  transition: 0.5s;
+}
+#daytext{
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: default;
+
+}
+#dates{
+  position: relative;
+  height: 200px;
+  width: 280px;
+}
+#date{
+  position: relative;
+  float: left;
+  margin: 0;
+  background-color: white;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  transition: 0.5s;
+  z-index: 2;
+
+}
+#datex{
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin: 0;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  transition: 0.5s;
+  z-index: 0;
+}
+#datexi{
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin: 0;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  transition: 0.5s;
+  z-index: -1;
+}
+#colorslider1{
+  position: absolute;
+  margin-left: 0px;
+  height: 40px;
+  width: 40px;
+  transition: 0.05s;
+  z-index: 1;
+}
+#colorslider2{
+  position: absolute;
+  margin-left: 0px;
+  height: 40px;
+  width: 40px;
+  transition: 0.05s;
+  z-index: 1;
+}
+#datetext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: default;
+
+  z-index: 2;
+}
+#occationtext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: default;
+
+  z-index: 2;
+}
+#addnewbutton{
+  background-color: #58b2a4;
+  height: 30px;
+  color: black;
+  border: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: default;
+}
+#datetextextra{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #d9dcde;
+  transform: translate(-50%,-50%);
+  cursor: default;
+
+  z-index: 2;
+}
+#date:hover{
+  background-color:#5da79b;
+  color: white;
+}
+#occasion{
+  position: relative;
+  height: 160px;
+  width: 280px;
+}
+#vacation{
+  position: relative;
+  font-weight: bold;
+  float: left;
+  left: -160px;
+  margin: 0;
+  display: inline-block;
+  height: 40px;
+  width: 160px;
+  transition: 0.5s;
+  z-index: 6;
+  background-color: #d3738b;
+}
+#walk{
+  position: relative;
+  font-weight: bold;
+  float: left;
+  left: -280px;
+  margin: 0;
+  display: inline-block;
+  height: 40px;
+  width: 120px;
+  transition: 0.5s;
+  z-index: 5;
+  background-color: #7186db;
+}
+#fishing{
+  position: relative;
+  font-weight: bold;
+  float: left;
+  left: -120px;
+  margin: 0;
+  display: inline-block;
+  height: 40px;
+  width: 120px;
+  transition: 0.5s;
+  z-index: 6;
+  background-color: #8f658a;
+}
+#weekend{
+  position: relative;
+  font-weight: bold;
+  float: left;
+  left: -280px;
+  margin: 0;
+  display: inline-block;
+  height: 40px;
+  width: 160px;
+  transition: 0.5s;
+  z-index: 5;
+  background-color: #f7c187;
+}
+#addnew{
+  position: relative;
+  font-weight: bold;
+  float: left;
+  left: -280px;
+  margin: 0;
+  display: inline-block;
+  height: 40px;
+  width: 280px;
+  transition: 0.5s;
+  z-index: 5;
+  background-color: #58b2a4;
+}
+#reset{
+  position: relative;
+  font-weight: bold;
+  float: left;
+  left: -280px;
+  margin: 0;
+  display: inline-block;
+  height: 40px;
+  width: 280px;
+  transition: 0.5s;
+  z-index: 5;
+  background-color: white;
+}
